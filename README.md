@@ -25,6 +25,7 @@ The analysis investigates global river system water quality and toxin concentrat
 - Linear regression analysis exploring the relationship between pH and Lead concentrations
 - Clear visual summaries (bar charts, line graphs) stored in the `Assets` folder
 - A full PDF report of the analysis available in the `Docs` folder
+- Detailed documentation of the full analysis approach and methodology
 
 ---
 
@@ -45,13 +46,34 @@ Evironmentak-Toxin-Analysis-In-River-Systems/
 │       └── National_River_Toxin_Dataset_1.csv
 │
 ├── Docs/                            # Project documentation and reports
+│   ├── ANALYSIS_APPROACH.md         # Detailed step-by-step analysis methodology
 │   └── Environmental Toxin Analysis in River Systems (4).pdf
 │
 ├── Notebooks/                       # Jupyter Notebook containing the full analysis
 │   └── Environmental Toxin Analysis in River Systems.ipynb
 │
-└── README.md                        # Project overview and documentation
+├── .gitignore                       # Git ignore rules
+├── LICENSE                          # MIT License
+├── README.md                        # Project overview and documentation
+└── requirements.txt                 # Python dependencies
 ```
+
+---
+
+## Analysis Approach
+
+A complete step-by-step breakdown of the analytical methodology used in this project is available here:
+
+**→ [Docs/ANALYSIS_APPROACH.md](Docs/ANALYSIS_APPROACH.md)**
+
+This document covers:
+- Data loading and cleaning process
+- Missing value handling strategy
+- Descriptive statistics and ranking of polluted river systems
+- Time-series visualization approach
+- Hypothesis testing (t-test) methodology and results
+- Linear regression analysis between pH and Lead
+- Key takeaways and interpretation of findings
 
 ---
 
@@ -104,14 +126,14 @@ The results highlight the importance of continuous monitoring of heavy metal acc
    cd Evironmentak-Toxin-Analysis-In-River-Systems
    ```
 
-2. Open the Jupyter Notebook:
+2. Install the required dependencies:
    ```bash
-   jupyter notebook "Notebooks/Environmental Toxin Analysis in River Systems.ipynb"
+   pip install -r requirements.txt
    ```
 
-3. Make sure the required libraries are installed:
+3. Open the Jupyter Notebook:
    ```bash
-   pip install pandas numpy matplotlib seaborn scipy scikit-learn statsmodels
+   jupyter notebook "Notebooks/Environmental Toxin Analysis in River Systems.ipynb"
    ```
 
 4. The notebook loads the dataset from the same directory (or adjust the path to point to `Dataset/Clean/National_River_Toxin_Dataset_1.csv`).
@@ -133,13 +155,15 @@ The results highlight the importance of continuous monitoring of heavy metal acc
 
 ## Visual Outputs
 
-Graph screenshots and key visualizations from the notebook are stored in the `Assets/` folder. A complete written report (including both code explanations and visuals) is available as a PDF in the `Docs/` folder.
+Graph screenshots and key visualizations from the notebook are stored in the `Assets/` folder.  
+A complete written report (including both code explanations and visuals) is available as a PDF in the `Docs/` folder.  
+A detailed explanation of the full analysis methodology can be found in [`Docs/ANALYSIS_APPROACH.md`](Docs/ANALYSIS_APPROACH.md).
 
 ---
 
 ## License
 
-This project is released under the **MIT License**.
+This project is released under the **MIT License**. See the [LICENSE](LICENSE) file for full details.
 
 ---
 
